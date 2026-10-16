@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { direction: rtl; }
+body { margin:0; background:#f4f7f6; color:#172b3a; font-family:Arial,Tahoma,sans-serif; }
+button,input,select,textarea { font:inherit; }
+button { cursor:pointer; }
+.container { width:min(1120px, calc(100% - 28px)); margin-inline:auto; }
+.card { background:white; border:1px solid #e5ecef; border-radius:18px; padding:20px; box-shadow:0 4px 18px rgba(26,82,118,.045); }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:0; border-radius:12px; padding:11px 16px; font-weight:700; text-decoration:none; }
+.btn-primary { background:#1a5276; color:white; }
+.btn-light { background:#eaf2f6; color:#1a5276; }
+.field { width:100%; border:1px solid #d6e0e5; background:#fff; border-radius:11px; padding:12px; outline:none; }
+.field:focus { border-color:#1a5276; box-shadow:0 0 0 3px #1a52761c; }
+.label { display:block; font-size:14px; font-weight:700; margin-bottom:7px; }
+.grid-cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+@media(max-width:760px){ .grid-cards{grid-template-columns:1fr;} .card{padding:16px;} }
